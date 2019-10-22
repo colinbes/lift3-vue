@@ -1,3 +1,4 @@
 *.log
 src/main/webapp/myAssets
 src/main/webapp/dist
+src/main/client/node_modules
