@@ -1,0 +1,3 @@
+*.log
+src/main/webapp/myAssets
+src/main/webapp/dist
