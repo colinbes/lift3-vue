@@ -23,7 +23,14 @@ On clean install, css files won't exist - to build css files navigate to *./src/
 
 To run liftweb change to root project folder where sbt.build file exists and execute **sbt** and then **jetty:start**
 
+Run using ~jetty:start of you want code changes (including client code changes) to trigger restart.
+
 ## Comments
 - Challenge with this example is workflow - I haven't experimented with how we could use *npm run serve* in development environment and fit in with LiftWeb as first objective was to get roundtrip concept working.
 
 - I also don't like inserting code into global scope and would rather insert in *home.vue's* scope but haven't tried to figure this out yet (actually don't know where to start)
+
+# Version History
+- 0.0.2
+    added service injection by using snippet render injection to specified element (#angularscript in this case)
+    included missing liftweb libraries
