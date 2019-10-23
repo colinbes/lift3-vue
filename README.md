@@ -3,6 +3,10 @@ Really nasty and simple example with ideas borrowed from across the web.
 Click 'do Round Trip' button to initiate round trip and update page with results.
 View ./src/main/client/README.md for client readme
 
+## Install vue-cli
+global install vue-cli
+- npm install -g @vue/cli
+
 ## How it works:
 - LiftWeb's snippet code setups/defines roundtrip code and inserts javascript code into global space and is shown in *com.besterdesigns.lib.EmptyRoundTrip*
 - Button and insert is handled in RTPage.vue
