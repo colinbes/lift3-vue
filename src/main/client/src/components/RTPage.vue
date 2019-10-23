@@ -21,10 +21,18 @@ export default {
   },
   methods: {
     doSimpleRT () {
+      myServices.doSimpleRT().then(response => {
+        this.someValue = response
+      })
+    }
+    /*
+    If using global injection vs using liftweb's render function to insert js
+    doSimpleRT1 () {
       window.vue.$myRTFunctions.doSimpleRT().then(response => {
         this.someValue = response
       })
     }
+    */
   }
 }
 </script>
