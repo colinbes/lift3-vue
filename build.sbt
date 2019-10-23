@@ -1,6 +1,6 @@
 name := "Liftweb_VUE"
 organization := "com.besterdesigns"
-version := "0.0.1"
+version := "0.0.2"
 
 scalaVersion := "2.12.8"
 
@@ -15,6 +15,7 @@ libraryDependencies ++= {
   val liftVersion = "3.3.0"
   Seq(
     "net.liftweb"       %% "lift-webkit"        % liftVersion        % "compile",
+    "net.liftweb" %% "lift-common" % liftVersion,
     "ch.qos.logback"    % "logback-classic"     % "1.2.3",
     "org.eclipse.jetty" % "jetty-webapp"        % "9.4.18.v20190429"  % "container,test",
     "org.eclipse.jetty" % "jetty-plus"          % "9.4.18.v20190429"  % "container,test", // For Jetty Config
