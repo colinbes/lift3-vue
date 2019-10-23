@@ -28,7 +28,7 @@ class EmptyRoundTrip extends PageRoundTrips {
       val data = s"var $serviceName=${rt}"
       Script(JsRaw(data).cmd)
     }
-    res.getOrElse(Script())
+    res.getOrElse(Script(JsCmds._Noop))
   }
 
   /**
